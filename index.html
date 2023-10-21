@@ -8,19 +8,18 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./assets/style/main.css'>
 </head>
 
 <body>
     <!-- Header + NavBar -->
-    <secion id="header" class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-            <a href="/"
-                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                <svg class="bi me-2" width="40" height="32">
-                    <use xlink:href="#bootstrap"></use>
-                </svg>
-                <span class="fs-4"> Utilitiy Code</span>
+    <section id="header" class="fixed-top bg-white">
+        <header class="d-flex justify-content-center align-items-center border-bottom">
+            <a href="./index.html"
+                class="d-flex align-items-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <object class="bi me-2" data="./assets/images/svg/logo.svg" height="50" width="50" type="">
+                </object>
+                <span class="fs-4"><h2> Utilitiy Code</h2></span>
             </a>
 
             <nav class="navbar navbar-expand-lg" aria-label="Offcanvas navbar large">
@@ -40,24 +39,39 @@
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    <a class="nav-link" aria-current="page" href="#">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Link</a>
+                                    <a class="nav-link" aria-current="page" href="#capstones">Capstones</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#projects">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#future">Future</a>
                                 </li>
                                 <li class="nav-item dropdown">
+                                    <!-- <a class="nav-link active" aria-current="page" href="#resume">Resume</a> -->
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
-                                        Dropdown
+                                        Resume
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#resume">Resume</a></li>
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        <li><a class="dropdown-item" href="#experience">Work Experience</a></li>
+                                        <li><a class="dropdown-item" href="#education">Education</a></li>
+                                        <li><a class="dropdown-item" href="#skills">Skills</a></li>
+                                        <li><a class="dropdown-item" href="#interests">Interests</a></li>
                                     </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#about-me">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#contact-me">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -65,54 +79,56 @@
                 </div>
             </nav>
         </header>
-    </secion>
-
-    <!-- Title -->
-    <section id="title">
-        <div class="container border-bottom">
-            <div class="px-4 pb-5 mb-5 text-center">
-                <div class="overflow-hidden" style="max-height: 30vh;">
-                    <div class="container px-5">
-                        <img src="bootstrap-docs.png" class="img-fluid border rounded-3 shadow-lg mb-5"
-                            alt="Example image" width="700" height="500" loading="lazy">
-                    </div>
-                </div>
-                <h1 class="display-4 fw-bold text-body-emphasis">Simplify Life</h1>
-                <div class="col-lg-6 mx-auto">
-                    <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the
-                        world’s most popular front-end open source toolkit, featuring Sass variables and mixins,
-                        responsive
-                        grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-                </div>
-            </div>
-        </div>
     </section>
 
-    <!-- Capstones -->
-    <section id="capstones" class="container px-4 py-5 border-bottom">
-        <h2 class="pb-2"><img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="Udemy"
-                height="28em" loading="lazy">
-            Capstone Projects
-        </h2>
-
-        <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5"> -->
-        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 g-4 py-5">
-            <div class="col d-flex align-items-start">
-                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-                    <use xlink:href="#bootstrap"></use>
-                </svg>
-                <div>
-                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-                    <p>Paragraph of text beneath the heading to explain the heading.</p>
-                    <a href="#" class="icon-link">
-                        Call to action
-                        <svg class="bi">
-                            <use xlink:href="#chevron-right"></use>
-                        </svg>
-                    </a>
+    <main>
+        <!-- Title -->
+        <section id="title">
+            <div class="container border-bottom">
+                <div class="px-4 pb-5 mb-5 text-center">
+                    <div class="overflow-hidden" style="max-height: 30vh;">
+                        <div class="container px-5">
+                            <img src="bootstrap-docs.png" class="img-fluid border rounded-3 shadow-lg mb-5"
+                                alt="Example image" width="700" height="500" loading="lazy">
+                        </div>
+                    </div>
+                    <h1 class="display-4 fw-bold text-body-emphasis">Simplify Life</h1>
+                    <div class="col-lg-6 mx-auto">
+                        <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap,
+                            the
+                            world’s most popular front-end open source toolkit, featuring Sass variables and mixins,
+                            responsive
+                            grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                    </div>
                 </div>
             </div>
-            <!-- <div class="col d-flex align-items-start">
+        </section>
+
+        <!-- Capstones -->
+        <section id="capstones" class="container px-4 py-5 border-bottom">
+            <h2 class="py-2"><img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="Udemy"
+                    height="30em" loading="lazy">
+                Capstone Projects
+            </h2>
+
+            <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5"> -->
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 g-4 py-5">
+                <div class="col d-flex align-items-start">
+                    <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                        <p>Paragraph of text beneath the heading to explain the heading.</p>
+                        <a href="#" class="icon-link">
+                            Call to action
+                            <svg class="bi">
+                                <use xlink:href="#chevron-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- <div class="col d-flex align-items-start">
                 <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
                     <use xlink:href="#cpu-fill"></use>
                 </svg>
@@ -217,313 +233,18 @@
                     </a>
                 </div>
             </div> -->
-        </div>
-    </section>
+            </div>
+        </section>
 
-    <!-- Projects -->
-    <section id="projects">
-        <div class="container px-4 py-5 border-bottom" id="custom-cards">
-            <h2 class="pb-2">
-                <object data="./assets/images/svg/utility-code.svg" type="" height="28em"></object>
-                's Projects
-            </h2>
+        <!-- Projects -->
+        <section id="projects">
+            <div class="container px-4 py-5 border-bottom" id="custom-cards">
+                <h2 class="py-2">
+                    <object data="./assets/images/svg/utility-code.svg" type="" height="24em"></object>
+                    's Projects
+                </h2>
 
-            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-                <div class="col">
-                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                        style="background-image: url('unsplash-photo-1.jpg');">
-                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
-                            <ul class="d-flex list-unstyled mt-auto">
-                                <li class="me-auto">
-                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
-                                        class="rounded-circle border border-white">
-                                </li>
-                                <li class="d-flex align-items-center me-3">
-                                    <svg class="bi me-2" width="1em" height="1em">
-                                        <use xlink:href="#geo-fill"></use>
-                                    </svg>
-                                    <small>Earth</small>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <svg class="bi me-2" width="1em" height="1em">
-                                        <use xlink:href="#calendar3"></use>
-                                    </svg>
-                                    <small>3d</small>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                        style="background-image: url('unsplash-photo-2.jpg');">
-                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple
-                                lines</h3>
-                            <ul class="d-flex list-unstyled mt-auto">
-                                <li class="me-auto">
-                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
-                                        class="rounded-circle border border-white">
-                                </li>
-                                <li class="d-flex align-items-center me-3">
-                                    <svg class="bi me-2" width="1em" height="1em">
-                                        <use xlink:href="#geo-fill"></use>
-                                    </svg>
-                                    <small>Pakistan</small>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <svg class="bi me-2" width="1em" height="1em">
-                                        <use xlink:href="#calendar3"></use>
-                                    </svg>
-                                    <small>4d</small>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                        style="background-image: url('unsplash-photo-3.jpg');">
-                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
-                            <ul class="d-flex list-unstyled mt-auto">
-                                <li class="me-auto">
-                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
-                                        class="rounded-circle border border-white">
-                                </li>
-                                <li class="d-flex align-items-center me-3">
-                                    <svg class="bi me-2" width="1em" height="1em">
-                                        <use xlink:href="#geo-fill"></use>
-                                    </svg>
-                                    <small>California</small>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <svg class="bi me-2" width="1em" height="1em">
-                                        <use xlink:href="#calendar3"></use>
-                                    </svg>
-                                    <small>5d</small>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- future projects -->
-    <section id="future" class="container px-4 py-5 border-bottom">
-        <h2 class="pb-2">
-            <object data="./assets/images/svg/utility-code.svg" type="" height="28em"></object>
-            's Future Projects
-        </h2>
-
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-            <div class="col d-flex align-items-start">
-                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-                    <use xlink:href="#bootstrap"></use>
-                </svg>
-                <div>
-                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-                    <p>Paragraph of text beneath the heading to explain the heading.</p>
-                    <a href="#" class="icon-link">
-                        Call to action
-                        <svg class="bi">
-                            <use xlink:href="#chevron-right"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="col d-flex align-items-start">
-                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-                    <use xlink:href="#cpu-fill"></use>
-                </svg>
-                <div>
-                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-                    <p>Paragraph of text beneath the heading to explain the heading.</p>
-                    <a href="#" class="icon-link">
-                        Call to action
-                        <svg class="bi">
-                            <use xlink:href="#chevron-right"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="col d-flex align-items-start">
-                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-                    <use xlink:href="#calendar3"></use>
-                </svg>
-                <div>
-                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-                    <p>Paragraph of text beneath the heading to explain the heading.</p>
-                    <a href="#" class="icon-link">
-                        Call to action
-                        <svg class="bi">
-                            <use xlink:href="#chevron-right"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="col d-flex align-items-start">
-                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-                    <use xlink:href="#home"></use>
-                </svg>
-                <div>
-                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-                    <p>Paragraph of text beneath the heading to explain the heading.</p>
-                    <a href="#" class="icon-link">
-                        Call to action
-                        <svg class="bi">
-                            <use xlink:href="#chevron-right"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="col d-flex align-items-start">
-                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-                    <use xlink:href="#speedometer2"></use>
-                </svg>
-                <div>
-                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-                    <p>Paragraph of text beneath the heading to explain the heading.</p>
-                    <a href="#" class="icon-link">
-                        Call to action
-                        <svg class="bi">
-                            <use xlink:href="#chevron-right"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="col d-flex align-items-start">
-                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-                    <use xlink:href="#toggles2"></use>
-                </svg>
-                <div>
-                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-                    <p>Paragraph of text beneath the heading to explain the heading.</p>
-                    <a href="#" class="icon-link">
-                        Call to action
-                        <svg class="bi">
-                            <use xlink:href="#chevron-right"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="col d-flex align-items-start">
-                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-                    <use xlink:href="#geo-fill"></use>
-                </svg>
-                <div>
-                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-                    <p>Paragraph of text beneath the heading to explain the heading.</p>
-                    <a href="#" class="icon-link">
-                        Call to action
-                        <svg class="bi">
-                            <use xlink:href="#chevron-right"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="col d-flex align-items-start">
-                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-                    <use xlink:href="#tools"></use>
-                </svg>
-                <div>
-                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-                    <p>Paragraph of text beneath the heading to explain the heading.</p>
-                    <a href="#" class="icon-link">
-                        Call to action
-                        <svg class="bi">
-                            <use xlink:href="#chevron-right"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Resume -->
-    <section id="resume">
-        <div class="container px-4 py-5 border-bottom">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
-                        width="700" height="500" loading="lazy">
-                </div>
-                <div class="col-lg-6">
-                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">My Resume</h1>
-                    <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the
-                        world’s most popular front-end open source toolkit, featuring Sass variables and mixins,
-                        responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-                </div>
-            </div>
-
-            <!-- Work Experience -->
-            <div class="container px-4 py-5" id="featured-3">
-                <h2 class="pb-2 border-bottom">Work Experience</h2>
-                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-                    <div class="feature col">
-                        <div
-                            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                            <svg class="bi" width="1em" height="1em">
-                                <use xlink:href="#collection"></use>
-                            </svg>
-                        </div>
-                        <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
-                            sentence and probably just keep going until we run out of words.</p>
-                        <a href="#" class="icon-link">
-                            Call to action
-                            <svg class="bi">
-                                <use xlink:href="#chevron-right"></use>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="feature col">
-                        <div
-                            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                            <svg class="bi" width="1em" height="1em">
-                                <use xlink:href="#people-circle"></use>
-                            </svg>
-                        </div>
-                        <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
-                            sentence and probably just keep going until we run out of words.</p>
-                        <a href="#" class="icon-link">
-                            Call to action
-                            <svg class="bi">
-                                <use xlink:href="#chevron-right"></use>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="feature col">
-                        <div
-                            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                            <svg class="bi" width="1em" height="1em">
-                                <use xlink:href="#toggles2"></use>
-                            </svg>
-                        </div>
-                        <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
-                            sentence and probably just keep going until we run out of words.</p>
-                        <a href="#" class="icon-link">
-                            Call to action
-                            <svg class="bi">
-                                <use xlink:href="#chevron-right"></use>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Education -->
-            <div class="container px-4 py-5" id="custom-cards">
-                <h2 class="pb-2 border-bottom">Education</h2>
-
-                <div class="row row-cols-1 row-cols-lg-2 align-items-stretch g-4 py-5">
+                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
                     <div class="col">
                         <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
                             style="background-image: url('unsplash-photo-1.jpg');">
@@ -556,7 +277,8 @@
                             style="background-image: url('unsplash-photo-2.jpg');">
                             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                                 <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to
-                                    multiple lines</h3>
+                                    multiple
+                                    lines</h3>
                                 <ul class="d-flex list-unstyled mt-auto">
                                     <li class="me-auto">
                                         <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
@@ -579,271 +301,586 @@
                         </div>
                     </div>
 
-                </div>
-            </div>
-
-            <!-- Skills -->
-            <div class="container px-4 py-5" id="icon-grid">
-                <h2 class="pb-2 border-bottom">Skills</h2>
-
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-                    <div class="col d-flex align-items-start">
-                        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-                            <use xlink:href="#bootstrap"></use>
-                        </svg>
-                        <div>
-                            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-                            <p>Paragraph of text beneath the heading to explain the heading.</p>
-                        </div>
-                    </div>
-                    <div class="col d-flex align-items-start">
-                        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-                            <use xlink:href="#cpu-fill"></use>
-                        </svg>
-                        <div>
-                            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-                            <p>Paragraph of text beneath the heading to explain the heading.</p>
-                        </div>
-                    </div>
-                    <div class="col d-flex align-items-start">
-                        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-                            <use xlink:href="#calendar3"></use>
-                        </svg>
-                        <div>
-                            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-                            <p>Paragraph of text beneath the heading to explain the heading.</p>
-                        </div>
-                    </div>
-                    <div class="col d-flex align-items-start">
-                        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-                            <use xlink:href="#home"></use>
-                        </svg>
-                        <div>
-                            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-                            <p>Paragraph of text beneath the heading to explain the heading.</p>
-                        </div>
-                    </div>
-                    <div class="col d-flex align-items-start">
-                        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-                            <use xlink:href="#speedometer2"></use>
-                        </svg>
-                        <div>
-                            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-                            <p>Paragraph of text beneath the heading to explain the heading.</p>
-                        </div>
-                    </div>
-                    <div class="col d-flex align-items-start">
-                        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-                            <use xlink:href="#toggles2"></use>
-                        </svg>
-                        <div>
-                            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-                            <p>Paragraph of text beneath the heading to explain the heading.</p>
-                        </div>
-                    </div>
-                    <div class="col d-flex align-items-start">
-                        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-                            <use xlink:href="#geo-fill"></use>
-                        </svg>
-                        <div>
-                            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-                            <p>Paragraph of text beneath the heading to explain the heading.</p>
-                        </div>
-                    </div>
-                    <div class="col d-flex align-items-start">
-                        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-                            <use xlink:href="#tools"></use>
-                        </svg>
-                        <div>
-                            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-                            <p>Paragraph of text beneath the heading to explain the heading.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Interests -->
-            <div class="container px-4 py-5" id="icon-grid">
-                <h2 class="pb-2 border-bottom">Interests</h2>
-
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3  g-4 py-5">
-                    <div class="col d-flex align-items-start">
-                        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-                            <use xlink:href="#bootstrap"></use>
-                        </svg>
-                        <div>
-                            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-                            <p>Paragraph of text beneath the heading to explain the heading.</p>
-                        </div>
-                    </div>
-                    <div class="col d-flex align-items-start">
-                        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-                            <use xlink:href="#cpu-fill"></use>
-                        </svg>
-                        <div>
-                            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-                            <p>Paragraph of text beneath the heading to explain the heading.</p>
-                        </div>
-                    </div>
-                    <div class="col d-flex align-items-start">
-                        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-                            <use xlink:href="#calendar3"></use>
-                        </svg>
-                        <div>
-                            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-                            <p>Paragraph of text beneath the heading to explain the heading.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- About ME -->
-    <section id="about-me">
-        <div class="container px-4 pt-5 border-bottom">
-            <h2 class="pb-2">About ME</h2>
-        </div>
-        <div id="myCarousel" class="carousel slide mb-6 pointer-event" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
-                    aria-label="Slide 1" aria-current="true"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
-                    class=""></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
-                    class=""></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                    </svg>
-                    <div class="container">
-                        <div class="carousel-caption text-start">
-                            <h1>Example headline.</h1>
-                            <p class="opacity-75">Some representative placeholder content for the first slide of the
-                                carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                    </svg>
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Another example headline.</h1>
-                            <p>Some representative placeholder content for the second slide of the carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                    </svg>
-                    <div class="container">
-                        <div class="carousel-caption text-end">
-                            <h1>One more for good measure.</h1>
-                            <p>Some representative placeholder content for the third slide of this carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </section>
-
-    <!-- Contact ME -->
-    <section id="contact-me">
-        <div class="container">
-            <footer class="pt-5">
-                <div class="row border-bottom">
-                    <div class="col-6 col-md-2 mb-3">
-                        <h5>Section</h5>
-                        <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a>
-                            </li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
-                            </li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-6 col-md-2 mb-3">
-                        <h5>Section</h5>
-                        <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a>
-                            </li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
-                            </li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-6 col-md-2 mb-3">
-                        <h5>Section</h5>
-                        <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a>
-                            </li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
-                            </li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-md-5 offset-md-1 mb-3">
-                        <form>
-                            <h5>Subscribe to our newsletter</h5>
-                            <p>Monthly digest of what's new and exciting from us.</p>
-                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                                <label for="newsletter1" class="visually-hidden">Email address</label>
-                                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                                <button class="btn btn-primary" type="button">Subscribe</button>
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                            style="background-image: url('unsplash-photo-3.jpg');">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="me-auto">
+                                        <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                                            class="rounded-circle border border-white">
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <svg class="bi me-2" width="1em" height="1em">
+                                            <use xlink:href="#geo-fill"></use>
+                                        </svg>
+                                        <small>California</small>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <svg class="bi me-2" width="1em" height="1em">
+                                            <use xlink:href="#calendar3"></use>
+                                        </svg>
+                                        <small>5d</small>
+                                    </li>
+                                </ul>
                             </div>
-                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- future projects -->
+        <section id="future" class="container px-4 py-5 border-bottom">
+            <h2 class="py-2">
+                <object data="./assets/images/svg/utility-code.svg" type="" height="24em"></object>
+                's Future Projects
+            </h2>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+                <div class="col d-flex align-items-start">
+                    <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                        <p>Paragraph of text beneath the heading to explain the heading.</p>
+                        <a href="#" class="icon-link">
+                            Call to action
+                            <svg class="bi">
+                                <use xlink:href="#chevron-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                        <use xlink:href="#cpu-fill"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                        <p>Paragraph of text beneath the heading to explain the heading.</p>
+                        <a href="#" class="icon-link">
+                            Call to action
+                            <svg class="bi">
+                                <use xlink:href="#chevron-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                        <use xlink:href="#calendar3"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                        <p>Paragraph of text beneath the heading to explain the heading.</p>
+                        <a href="#" class="icon-link">
+                            Call to action
+                            <svg class="bi">
+                                <use xlink:href="#chevron-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                        <use xlink:href="#home"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                        <p>Paragraph of text beneath the heading to explain the heading.</p>
+                        <a href="#" class="icon-link">
+                            Call to action
+                            <svg class="bi">
+                                <use xlink:href="#chevron-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                        <use xlink:href="#speedometer2"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                        <p>Paragraph of text beneath the heading to explain the heading.</p>
+                        <a href="#" class="icon-link">
+                            Call to action
+                            <svg class="bi">
+                                <use xlink:href="#chevron-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                        <use xlink:href="#toggles2"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                        <p>Paragraph of text beneath the heading to explain the heading.</p>
+                        <a href="#" class="icon-link">
+                            Call to action
+                            <svg class="bi">
+                                <use xlink:href="#chevron-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                        <use xlink:href="#geo-fill"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                        <p>Paragraph of text beneath the heading to explain the heading.</p>
+                        <a href="#" class="icon-link">
+                            Call to action
+                            <svg class="bi">
+                                <use xlink:href="#chevron-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                        <use xlink:href="#tools"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                        <p>Paragraph of text beneath the heading to explain the heading.</p>
+                        <a href="#" class="icon-link">
+                            Call to action
+                            <svg class="bi">
+                                <use xlink:href="#chevron-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume -->
+        <section id="resume">
+            <div class="container px-4 py-5 border-bottom">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+                            width="700" height="500" loading="lazy">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">My Resume</h2>
+                        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the
+                            world’s most popular front-end open source toolkit, featuring Sass variables and mixins,
+                            responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
                     </div>
                 </div>
 
-                <div class="d-flex flex-column flex-sm-row justify-content-between mt-4">
-                    <p>© 2023 Company, Inc. All rights reserved.</p>
-                    <ul class="list-unstyled d-flex">
-                        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-                                    <use xlink:href="#twitter"></use>
-                                </svg></a></li>
-                        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-                                    <use xlink:href="#instagram"></use>
-                                </svg></a></li>
-                        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-                                    <use xlink:href="#facebook"></use>
-                                </svg></a></li>
-                    </ul>
+                <!-- Work Experience -->
+                <div id="experience" class="container px-4 py-5" id="featured-3">
+                    <h3 class="py-2 border-bottom">Work Experience</h3>
+                    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                        <div class="feature col">
+                            <div
+                                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                                <svg class="bi" width="1em" height="1em">
+                                    <use xlink:href="#collection"></use>
+                                </svg>
+                            </div>
+                            <h4 class="fs-2 text-body-emphasis">Featured title</h4>
+                            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with
+                                another
+                                sentence and probably just keep going until we run out of words.</p>
+                            <a href="#" class="icon-link">
+                                Call to action
+                                <svg class="bi">
+                                    <use xlink:href="#chevron-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="feature col">
+                            <div
+                                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                                <svg class="bi" width="1em" height="1em">
+                                    <use xlink:href="#people-circle"></use>
+                                </svg>
+                            </div>
+                            <h4 class="fs-2 text-body-emphasis">Featured title</h4>
+                            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with
+                                another
+                                sentence and probably just keep going until we run out of words.</p>
+                            <a href="#" class="icon-link">
+                                Call to action
+                                <svg class="bi">
+                                    <use xlink:href="#chevron-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="feature col">
+                            <div
+                                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                                <svg class="bi" width="1em" height="1em">
+                                    <use xlink:href="#toggles2"></use>
+                                </svg>
+                            </div>
+                            <h4 class="fs-2 text-body-emphasis">Featured title</h4>
+                            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with
+                                another
+                                sentence and probably just keep going until we run out of words.</p>
+                            <a href="#" class="icon-link">
+                                Call to action
+                                <svg class="bi">
+                                    <use xlink:href="#chevron-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </footer>
-        </div>
-    </section>
+
+                <!-- Education -->
+                <div id="education" class="container px-4 py-5" id="custom-cards">
+                    <h3 class="py-2 border-bottom">Education</h3>
+
+                    <div class="row row-cols-1 row-cols-lg-2 align-items-stretch g-4 py-5">
+                        <div class="col">
+                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                                style="background-image: url('unsplash-photo-1.jpg');">
+                                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                    <h4 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h4>
+                                    <ul class="d-flex list-unstyled mt-auto">
+                                        <li class="me-auto">
+                                            <img src="https://github.com/twbs.png" alt="Bootstrap" width="32"
+                                                height="32" class="rounded-circle border border-white">
+                                        </li>
+                                        <li class="d-flex align-items-center me-3">
+                                            <svg class="bi me-2" width="1em" height="1em">
+                                                <use xlink:href="#geo-fill"></use>
+                                            </svg>
+                                            <small>Earth</small>
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <svg class="bi me-2" width="1em" height="1em">
+                                                <use xlink:href="#calendar3"></use>
+                                            </svg>
+                                            <small>3d</small>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                                style="background-image: url('unsplash-photo-2.jpg');">
+                                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                    <h4 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to
+                                        multiple lines</h4>
+                                    <ul class="d-flex list-unstyled mt-auto">
+                                        <li class="me-auto">
+                                            <img src="https://github.com/twbs.png" alt="Bootstrap" width="32"
+                                                height="32" class="rounded-circle border border-white">
+                                        </li>
+                                        <li class="d-flex align-items-center me-3">
+                                            <svg class="bi me-2" width="1em" height="1em">
+                                                <use xlink:href="#geo-fill"></use>
+                                            </svg>
+                                            <small>Pakistan</small>
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <svg class="bi me-2" width="1em" height="1em">
+                                                <use xlink:href="#calendar3"></use>
+                                            </svg>
+                                            <small>4d</small>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Skills -->
+                <div id="skills" class="container px-4 py-5" id="icon-grid">
+                    <h3 class="py-2 border-bottom">Skills</h3>
+
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+                        <div class="col d-flex align-items-start">
+                            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                                <use xlink:href="#bootstrap"></use>
+                            </svg>
+                            <div>
+                                <h4 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h4>
+                                <p>Paragraph of text beneath the heading to explain the heading.</p>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-start">
+                            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                                <use xlink:href="#cpu-fill"></use>
+                            </svg>
+                            <div>
+                                <h4 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h4>
+                                <p>Paragraph of text beneath the heading to explain the heading.</p>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-start">
+                            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                                <use xlink:href="#calendar3"></use>
+                            </svg>
+                            <div>
+                                <h4 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h4>
+                                <p>Paragraph of text beneath the heading to explain the heading.</p>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-start">
+                            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                                <use xlink:href="#home"></use>
+                            </svg>
+                            <div>
+                                <h4 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h4>
+                                <p>Paragraph of text beneath the heading to explain the heading.</p>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-start">
+                            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                                <use xlink:href="#speedometer2"></use>
+                            </svg>
+                            <div>
+                                <h4 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h4>
+                                <p>Paragraph of text beneath the heading to explain the heading.</p>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-start">
+                            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                                <use xlink:href="#toggles2"></use>
+                            </svg>
+                            <div>
+                                <h4 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h4>
+                                <p>Paragraph of text beneath the heading to explain the heading.</p>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-start">
+                            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                                <use xlink:href="#geo-fill"></use>
+                            </svg>
+                            <div>
+                                <h4 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h4>
+                                <p>Paragraph of text beneath the heading to explain the heading.</p>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-start">
+                            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                                <use xlink:href="#tools"></use>
+                            </svg>
+                            <div>
+                                <h4 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h4>
+                                <p>Paragraph of text beneath the heading to explain the heading.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interests -->
+                <div id="interests" class="container px-4 py-5" id="icon-grid">
+                    <h3 class="py-2 border-bottom">Interests</h3>
+
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3  g-4 py-5">
+                        <div class="col d-flex align-items-start">
+                            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                                <use xlink:href="#bootstrap"></use>
+                            </svg>
+                            <div>
+                                <h4 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h4>
+                                <p>Paragraph of text beneath the heading to explain the heading.</p>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-start">
+                            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                                <use xlink:href="#cpu-fill"></use>
+                            </svg>
+                            <div>
+                                <h4 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h4>
+                                <p>Paragraph of text beneath the heading to explain the heading.</p>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-start">
+                            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                                <use xlink:href="#calendar3"></use>
+                            </svg>
+                            <div>
+                                <h4 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h4>
+                                <p>Paragraph of text beneath the heading to explain the heading.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About ME -->
+        <section id="about-me">
+            <div class="container px-4 pt-5 border-bottom">
+                <h2 class="py-2">About ME</h2>
+            </div>
+            <div id="myCarousel" class="carousel slide mb-6 pointer-event" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                        aria-label="Slide 1" aria-current="true"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+                        class=""></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
+                        class=""></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                        </svg>
+                        <div class="container">
+                            <div class="carousel-caption text-start">
+                                <h3>Example headline.</h3>
+                                <p class="opacity-75">Some representative placeholder content for the first slide of the
+                                    carousel.</p>
+                                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                        </svg>
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h3>Another example headline.</h3>
+                                <p>Some representative placeholder content for the second slide of the carousel.</p>
+                                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                        </svg>
+                        <div class="container">
+                            <div class="carousel-caption text-end">
+                                <h3>One more for good measure.</h3>
+                                <p>Some representative placeholder content for the third slide of this carousel.</p>
+                                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Contact ME -->
+        <section id="contact-me">
+            <div class="container">
+                <footer class="pt-5">
+                    <div class="row border-bottom">
+                        <div class="col-6 col-md-2 mb-3">
+                            <h5>Section</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#"
+                                        class="nav-link p-0 text-body-secondary">Features</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#"
+                                        class="nav-link p-0 text-body-secondary">Pricing</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-md-2 mb-3">
+                            <h5>Section</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#"
+                                        class="nav-link p-0 text-body-secondary">Features</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#"
+                                        class="nav-link p-0 text-body-secondary">Pricing</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-md-2 mb-3">
+                            <h5>Section</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#"
+                                        class="nav-link p-0 text-body-secondary">Features</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#"
+                                        class="nav-link p-0 text-body-secondary">Pricing</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-5 offset-md-1 mb-3">
+                            <form>
+                                <h5>Subscribe to our newsletter</h5>
+                                <p>Monthly digest of what's new and exciting from us.</p>
+                                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                                    <input id="newsletter1" type="text" class="form-control"
+                                        placeholder="Email address">
+                                    <button class="btn btn-primary" type="button">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-sm-row justify-content-between mt-4">
+                        <p>© 2023 Company, Inc. All rights reserved.</p>
+                        <ul class="list-unstyled d-flex">
+                            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24"
+                                        height="24">
+                                        <use xlink:href="#twitter"></use>
+                                    </svg></a></li>
+                            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24"
+                                        height="24">
+                                        <use xlink:href="#instagram"></use>
+                                    </svg></a></li>
+                            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24"
+                                        height="24">
+                                        <use xlink:href="#facebook"></use>
+                                    </svg></a></li>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
