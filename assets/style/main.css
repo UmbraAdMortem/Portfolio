@@ -1,3 +1,23 @@
 main {
     padding-top: 4rem;
-  }
+}
+
+#hobby-carousel {
+
+}
+
+#hobby-volleyball,
+#hobby-motor-cycle {
+    margin-top: -20%;
+    margin-bottom: -10%;
+}
+
+#hobby-bouldering {
+    margin-top: -40%;
+    margin-bottom: -48.4%;
+}
+
+#hobby-diving {
+    margin-top: -0%;
+    margin-bottom: -30%;
+}
