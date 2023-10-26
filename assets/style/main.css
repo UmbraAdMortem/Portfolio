@@ -3,21 +3,7 @@ main {
     margin-bottom: 2rem;
 }
 
-#hobby-volleyball,
-#hobby-motor-cycle {
-    margin-top: -20%;
-    margin-bottom: -10%;
-}
-
-#hobby-bouldering {
-    margin-top: -40%;
-    margin-bottom: -48.4%;
-}
-
-#hobby-diving {
-    margin-top: -0%;
-    margin-bottom: -30%;
-}
+/* Banner */
 
 .gradient-background {
     background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
@@ -53,4 +39,59 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* About ME */
+
+#hobby-volleyball,
+#hobby-motor-cycle {
+    margin-top: -20%;
+    margin-bottom: -10%;
+}
+
+#hobby-bouldering {
+    margin-top: -40%;
+    margin-bottom: -48.4%;
+}
+
+#hobby-diving {
+    margin-top: -0%;
+    margin-bottom: -30%;
+}
+
+/* Resume - Work experience */
+
+@media (min-width: 992px) {
+    #experience .card {
+        display: grid;
+        grid-template-rows: 1fr 2fr 6fr auto;
+        grid-template-columns: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    #experience .card {
+        display: grid;
+        grid-template-rows: 2fr 3fr 7fr auto;
+        grid-template-columns: auto;
+    }
+}
+@media (min-width: 14400px) {
+    #experience .card {
+        display: grid;
+        grid-template-rows: 2fr 2fr 6fr auto;
+        grid-template-columns: auto;
+    }
+}
+
+#experience .card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#experience .card-body {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: auto;
 }
