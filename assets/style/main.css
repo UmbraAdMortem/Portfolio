@@ -1,97 +1,98 @@
 main {
-    padding-top: 4rem;
-    margin-bottom: 2rem;
+  padding-top: 4rem;
+  margin-bottom: 2rem;
 }
 
 /* Banner */
 
 .gradient-background {
-    background: linear-gradient(300deg, #0d6efd, #0dd9fd, #21fd0d);
-    background-size: 180% 180%;
-    animation: gradient-animation 18s ease infinite;
+  background: linear-gradient(300deg, #0d6efd, #0dd9fd, #21fd0d);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
 }
 
 @keyframes gradient-animation {
-    0% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
 
-    50% {
-        background-position: 100% 50%;
-    }
+  50% {
+    background-position: 100% 50%;
+  }
 
-    100% {
-        background-position: 0% 50%;
-    }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .banner-grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto;
 }
 
 .grid-logo {
-    grid-row: span 2;
+  grid-row: span 2;
 }
 
 .grid-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* About ME */
 
 #hobby-volleyball,
 #hobby-motor-cycle {
-    margin-top: -20%;
-    margin-bottom: -10%;
+  margin-top: -20%;
+  margin-bottom: -10%;
 }
 
 #hobby-bouldering {
-    margin-top: -40%;
-    margin-bottom: -48.4%;
+  margin-top: -40%;
+  margin-bottom: -48.4%;
 }
 
 #hobby-diving {
-    margin-top: -0%;
-    margin-bottom: -30%;
+  margin-top: -0%;
+  margin-bottom: -30%;
 }
 
 /* Resume - Work experience */
 
 @media (min-width: 992px) {
-    #experience .card {
-        display: grid;
-        grid-template-rows: 1fr 2fr 6fr auto;
-        grid-template-columns: auto;
-    }
+  #experience .card {
+    display: grid;
+    grid-template-rows: 1fr 2fr 6fr auto;
+    grid-template-columns: auto;
+  }
 }
 
 @media (min-width: 1200px) {
-    #experience .card {
-        display: grid;
-        grid-template-rows: 2fr 3fr 7fr auto;
-        grid-template-columns: auto;
-    }
+  #experience .card {
+    display: grid;
+    grid-template-rows: 2fr 3fr 7fr auto;
+    grid-template-columns: auto;
+  }
 }
+
 @media (min-width: 14400px) {
-    #experience .card {
-        display: grid;
-        grid-template-rows: 2fr 2fr 6fr auto;
-        grid-template-columns: auto;
-    }
+  #experience .card {
+    display: grid;
+    grid-template-rows: 2fr 2fr 6fr auto;
+    grid-template-columns: auto;
+  }
 }
 
 #experience .card-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #experience .card-body {
-    display: grid;
-    grid-template-rows: 1fr auto;
-    grid-template-columns: auto;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: auto;
 }
